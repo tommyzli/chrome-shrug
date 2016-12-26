@@ -1,0 +1,13 @@
+{
+	"manifest_version": 2,
+	"name": "shrug",
+	"description": "This extension inserts the shrug emoji (¯\\_(ツ)_/¯) wherever you type :shrug:",
+	"version": "1.0",
+	"content_scripts": [
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
