@@ -1,13 +1,17 @@
 {
-	"manifest_version": 2,
-	"name": "shrug",
-	"description": "This extension inserts the shrug emoji (¯\\_(ツ)_/¯) wherever you type :shrug:",
-	"version": "1.0",
-	"content_scripts": [
-		{
-			"matches": ["*://*/*"],
-			"js": ["content_script.js"],
-			"run_at": "document_idle"
-		}
-	]
+    "manifest_version": 2,
+    "name": "shrug",
+    "description": "This extension inserts the shrug emoji (¯\\_(ツ)_/¯) wherever you type :shrug:",
+    "version": "1.0",
+    "browser_action": {
+        "default_title": "shrug",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["jquery-3.1.1.min.js", "content_script.js"],
+            "run_at": "document_idle"
+        }
+    ]
 }

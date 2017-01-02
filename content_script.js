@@ -1,10 +1,12 @@
-const onInput = (event)  => {
+const shrug = "¯\\_(ツ)_/¯";
+
+const onInput = (event) => {
   if (event.target.value.indexOf(":shrug:") !== -1) {
-    event.target.value = event.target.value.replace(":shrug:", "¯\\_(ツ)_/¯");
+    event.target.value = event.target.value.replace(":shrug:", shrug);
   }
 };
 
-const input_tags = document.querySelectorAll("input, textarea");
-input_tags.forEach((currentValue) => {
+const inputTags = document.querySelectorAll("input, textarea");
+inputTags.forEach((currentValue) => {
   currentValue.addEventListener("input", onInput);
 });
