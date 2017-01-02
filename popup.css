@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+    font-family: 'Lucida Grande', Arial, sans-serif;
+}
+input {
+    border: 0px;
+    text-align: center;
+    font-size: 150%;
+    width: 100px;
+}
+button {
+    margin-top: 20px;
+}
