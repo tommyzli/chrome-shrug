@@ -1,10 +1,12 @@
-function onInput(event) {
-  if (event.target.value.indexOf(":shrug:") !== -1) {
-    event.target.value = event.target.value.replace(":shrug:", "¯\\_(ツ)_/¯");
-  }
-}
+const shrug = "¯\\_(ツ)_/¯";
 
-var input_tags = document.querySelectorAll("input, textarea");
-input_tags.forEach(function (currentValue) {
+const onInput = (event) => {
+  if (event.target.value.indexOf(":shrug:") !== -1) {
+    event.target.value = event.target.value.replace(":shrug:", shrug);
+  }
+};
+
+const inputTags = document.querySelectorAll("input, textarea");
+inputTags.forEach((currentValue) => {
   currentValue.addEventListener("input", onInput);
 });
