@@ -1,3 +1,3 @@
 # chrome-shrug
 
-Chrome extension that replaces `:shrug:` with `¯\_(ツ)_/¯`
+Chrome extension that makes it easier to type `¯\_(ツ)_/¯`
